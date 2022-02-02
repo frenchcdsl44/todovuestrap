@@ -6,10 +6,13 @@ const build = {
     outDir: 'docs'
 }
 
+const ASSET_URL = process.env.ASSET_URL || '';
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  build
+  build,
+  base: `${ASSET_URL}/doc/`,  
 })
 
 
