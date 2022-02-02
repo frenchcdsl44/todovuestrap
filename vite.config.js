@@ -12,7 +12,7 @@ const ASSET_URL = process.env.ASSET_URL || '';
 export default defineConfig({
   plugins: [vue()],
   build,
-  base: `${ASSET_URL}/doc/`,  
+  base: `${ASSET_URL}/docs/`,  
 })
 
 
